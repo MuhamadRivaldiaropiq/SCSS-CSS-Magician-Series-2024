@@ -1,0 +1,149 @@
+.about {
+    height: 70vh;
+    background-color: #FEE9D6;
+    margin-top: 7rem;
+    img {
+        position: absolute;
+        width: 51rem;
+        color: #F3E8D2;
+    }
+    .img-kopi {
+       position: absolute;
+       z-index: 1;
+        width: 12.5rem;
+        margin-left: 0.2rem;
+        margin-top: 0.1rem;
+        border: 3px white;
+    }
+}
+p {
+    position: absolute;
+    z-index: 0;
+    width: 13rem;
+    height: 17.6rem;
+    background-color: #fff;
+    margin-left: 8.5rem;
+    margin-top: -3.8rem;
+    border-radius: 5%;
+}
+.konten {
+    margin-left: 28rem;
+    margin-top: 1rem;
+    position: absolute;
+  h6{
+    margin-top: 0.7rem;
+    font-size: 11px;
+    color: rgb(129, 123, 123);
+  }
+  button {
+    height: 1.5rem;
+    width: 5rem;
+    border-radius: 20px;
+    font-size: 8px;
+    background-color: #311c1b;
+    color: #fff;
+    margin-top: -1rem;
+    position: absolute;
+    border: none;
+  }
+}
+// Special Menu
+.Menu {
+    .card-utama {
+      display: grid;
+      grid-template-columns: repeat(3,13.5rem);
+      align-items: center;
+      column-gap: 3rem;
+      row-gap: 1rem;
+      column-gap: 1px;
+        margin-left: 4rem;
+        margin-top: 2rem;
+    }
+    h2 {
+        margin-top: 4rem;
+        margin-left: 6rem;
+    }
+    img {
+        width: 10rem;
+        margin-left: 16px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+    .card {
+        background-color: #fff;
+        width: 12rem;
+        height: 13rem;
+        margin-left: 2rem;
+        border-radius: 5px;
+        box-shadow: -1px -1px 5px 1px rgb(165, 156, 156);
+        .content-body {
+        font-size: 15px;
+        }
+    }
+    .content {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -1rem;
+    }
+    h6 {
+        margin-top: -1rem;
+        margin-left: 1.4rem;
+        font-size: 9.5px;
+    }
+}
+.content-5, .content-4, .content-6 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 119, 0);
+    margin-left: 9rem;
+    margin-top: -2rem;
+    img {
+        position: absolute;
+        width: 15px;
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+}
+.content-1, .content-2, .content-3 {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: rgb(255, 119, 0);
+    margin-left: 9rem;
+    margin-top: -2.5rem;
+    img {
+        position: absolute;
+        width: 15px;
+        margin-top: 4px;
+        margin-left: 4px;
+    }
+}
+.rating {
+    height: 1rem;
+    width: 2rem;
+    background-color: #fff;
+    position: absolute;
+    margin-top: -7.3rem;
+    margin-left: 1.5rem;
+    border-radius: 20px;
+    h6 {
+        position: absolute;
+        margin-top: 2.7px;
+        margin-left: 4.5px;
+    }
+    .bintang{
+        width: 10px;
+        position: absolute;
+        margin-left: 18px;
+        margin-top: 2.9px;
+    }
+}
+// mixin
+@mixin underline {
+    border-bottom: 3px solid rgb(255, 119, 0);
+}
+
+span {
+    @include underline();
+}
